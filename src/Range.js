@@ -40,7 +40,7 @@ module.exports = function Range(str_expression, formula) {
                         formula.exec_formula(formula.formula_ref[cell_full_name]);
                     }
                     else if (formula.formula_ref[cell_full_name].status === 'working') {
-                        throw new Error('Circular ref');
+                        // throw new Error('Circular ref');
                     }
                     if (sheet[cell_name].t === 'e') {
                         row.push(sheet[cell_name]);

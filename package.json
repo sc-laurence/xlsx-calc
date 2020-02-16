@@ -10,6 +10,7 @@
     "watch": "mocha --watch --reporter=min",
     "dev": "webpack --mode=development -w",
     "test-w": "mocha -w --check-leaks --sort",
+    "test-o": "mocha -w -g 'check range'",
     "build": "webpack --mode=production && sh deprecated-clones.sh"
   },
   "dependencies": {
